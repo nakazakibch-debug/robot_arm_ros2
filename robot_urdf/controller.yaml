@@ -1,0 +1,38 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    robot_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+robot_controller:
+  ros__parameters:
+    joints:
+      - joint_lower_arm
+      - joint_upper_arm
+      - joint_shoulder_drive
+      - joint_rotary_yoke
+      - joint_wrist_modul
+      - joint_gripper_actuator
+      - joint_gripper
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    
+    # --- أضف هذا الجزء للاستقرار ---
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.05
+      # تعطي سماحية للمتحكم حتى لا "يجن" إذا كان الروبوت بعيداً قليلاً عن الهدف
+      joint_lower_arm: {trajectory: 0.5, goal: 0.5}
+      joint_upper_arm: {trajectory: 0.5, goal: 0.5}
+      joint_shoulder_drive: {trajectory: 0.5, goal: 0.5}
+      joint_rotary_yoke: {trajectory: 0.5, goal: 0.5}
+      joint_wrist_modul: {trajectory: 0.5, goal: 0.5}
+      joint_gripper_actuator: {trajectory: 0.5, goal: 0.5}
+      joint_gripper: {trajectory: 0.5, goal: 0.5}

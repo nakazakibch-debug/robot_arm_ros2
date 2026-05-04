@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'Lower_arm_link', 'Upper_arm_link', 'Shoulder_Drive', 'Rotary_Yoke', 'Wrist_Modul', 'Gripper_Actuator', 'Gripper', ]
