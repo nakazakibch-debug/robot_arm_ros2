@@ -21,6 +21,15 @@ This repository showcases an integrated engineering pipeline: from mechanical de
 
 
 ---
+## 📁 Project Modules & Documentation
+
+This repository is organized into three main functional packages. Click on the links below to view the detailed setup and execution steps for each module:
+
+| Module | Description | Link |
+| :--- | :--- | :--- |
+| **🤖 Robot Simulation** | Core Gazebo simulation environment and ROS 2 Jazzy controllers. | [View README](./robot_arm_simulation/README.md) |
+| **🧠 MoveIt Configuration** | Motion planning, Inverse Kinematics, and collision checking setup. | [View README](./robot_arm_config/README.md) |
+| **🎨 Robot URDF & Assets** | Custom robot design, STL meshes, and Blender/After Effects animations. | [View README](./robot_urdf/README.md) |
 
 ## 🛠️ Global Tech Stack
 *   **Mechanical Design:** SolidWorks (STL Export & Assembly)
