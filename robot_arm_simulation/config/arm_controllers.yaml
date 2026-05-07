@@ -31,8 +31,4 @@ gripper_controller:
       - position
     state_interfaces:
       - position
-
       - velocity
-=======
-      - velocity
->>>>>>> 69ed8ee (Docs: RViz successfully running with arm_group configuration)
