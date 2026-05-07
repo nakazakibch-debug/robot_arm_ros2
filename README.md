@@ -21,7 +21,7 @@ This repository showcases an integrated engineering pipeline: from mechanical de
 
 
 ---
-## 📁 Project Modules & Documentation
+# 📁 Project Modules & Documentation
 
 This repository is organized into three main functional packages. Click on the links below to view the detailed setup and execution steps for each module:
 
